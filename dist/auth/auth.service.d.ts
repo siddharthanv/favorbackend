@@ -13,6 +13,7 @@ export declare class AuthService {
         accessToken: string;
         firstName: string;
         userType: string;
+        pincodeMapping: string[];
     }>;
     userStatusUpdate(id: string, userStatus: AuthUserStatus): Promise<void>;
     getServicePerson(filterDto: GetFilterServicePerson): Promise<User[]>;

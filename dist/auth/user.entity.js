@@ -67,6 +67,10 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "userStatus", void 0);
 __decorate([
+    typeorm_1.Column('simple-array'),
+    __metadata("design:type", Array)
+], User.prototype, "pincodeMapping", void 0);
+__decorate([
     typeorm_1.OneToMany((_type) => task_entity_1.Task, (task) => task.user, { eager: true }),
     __metadata("design:type", Array)
 ], User.prototype, "tasks", void 0);

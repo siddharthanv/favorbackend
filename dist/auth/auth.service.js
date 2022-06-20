@@ -31,12 +31,13 @@ let AuthService = class AuthService {
         const user = await this.usersRepository.findOne({ mobileNumber });
         const firstName = user.firstName;
         const userType = user.userType;
+        const pincodeMapping = user.pincodeMapping;
         if (user &&
             user.userStatus === 'ACTIVE' &&
             (await bcrypt.compare(password, user.password))) {
             const payload = { mobileNumber };
             const accessToken = await this.jwtService.sign(payload);
-            return { accessToken, firstName, userType };
+            return { accessToken, firstName, userType, pincodeMapping };
         }
         else {
             if (user.userStatus === 'ACTIVE') {

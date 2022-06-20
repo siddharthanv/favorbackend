@@ -31,11 +31,17 @@ export class AuthService {
 
   async signIn(
     authCredentialsDto2: AuthCredentialsDto2,
-  ): Promise<{ accessToken: string; firstName: string; userType: string }> {
+  ): Promise<{
+    accessToken: string;
+    firstName: string;
+    userType: string;
+    pincodeMapping: string[];
+  }> {
     const { mobileNumber, password } = authCredentialsDto2;
     const user = await this.usersRepository.findOne({ mobileNumber });
     const firstName = user.firstName;
     const userType = user.userType;
+    const pincodeMapping = user.pincodeMapping;
 
     if (
       user &&
@@ -44,7 +50,7 @@ export class AuthService {
     ) {
       const payload: JwtPayload = { mobileNumber };
       const accessToken: string = await this.jwtService.sign(payload);
-      return { accessToken, firstName, userType };
+      return { accessToken, firstName, userType, pincodeMapping };
     } else {
       if (user.userStatus === 'ACTIVE') {
         throw new UnauthorizedException('Please check your login credentials');

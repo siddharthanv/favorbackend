@@ -42,6 +42,9 @@ export class User {
   @Column()
   userStatus: string;
 
+  @Column('simple-array')
+  pincodeMapping: string[];
+
   @OneToMany((_type) => Task, (task) => task.user, { eager: true })
   tasks: Task[];
 }

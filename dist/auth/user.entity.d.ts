@@ -13,5 +13,6 @@ export declare class User {
     aadhar: string;
     pan: string;
     userStatus: string;
+    pincodeMapping: string[];
     tasks: Task[];
 }

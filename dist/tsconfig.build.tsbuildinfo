@@ -3517,8 +3517,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/dto/auth-credentials.dto.ts": {
-        "version": "fed08682e4d3748156adf4122baa9251587fa1b4e37235dc3221029c0663131c",
-        "signature": "3aa388ca103eeb57dbb03a1adce96853eadd49fb19200e7d22e619041048d6dd",
+        "version": "ad567475def8b7e1a54aad4b4950aa42ba1b9b043aaf3cbbf46d802a345aceb3",
+        "signature": "beb128c5f874b25449422d2cf63836f644d0e63387a0320ff04187471fe0c4c9",
         "affectsGlobalScope": false
       },
       "../node_modules/class-transformer/types/interfaces/decorator-options/expose-options.interface.d.ts": {
@@ -3667,8 +3667,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/user.entity.ts": {
-        "version": "013964982bcbf219360bbaa1076d0db19f7dbac5edc90309133398a875a9f93e",
-        "signature": "41853ab52874eaaab5f0170abbe41be123b993e6fe9ab67e002cc2eecfe4e46b",
+        "version": "a4eecbba143925c0cd4eea9301c174c6d7ceae3edf4d94799845d34da111e589",
+        "signature": "d16eb37ea4c36a1406a18a8404e99cd12cad42b5985fe88b449ebe1f41dd94ce",
         "affectsGlobalScope": false
       },
       "../src/auth/dto/get-service-person-filter.dto.ts": {
@@ -3677,7 +3677,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/users.repository.ts": {
-        "version": "ba0f0f19a107ab6547aa1eac2ffa4cb449d489a6770c4d4af62830819305be5b",
+        "version": "d6c0c97142959294abdf75564d15ad6672c2bbd79320ad670728efbe72e5bf93",
         "signature": "3976b5d5fad2495992c526f00707ce81330b644d7e7e3e5d6c6d22e859e31aa8",
         "affectsGlobalScope": false
       },
@@ -3952,8 +3952,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "46a5b8f5bbde54c9e05728f40f3f760900757d5118bf9ad2e16f074da580b804",
-        "signature": "25a45b5dfcf76291d9987fde85de22b0d698dd0ceb88399cf210f777c285db96",
+        "version": "e47e7c8df4a9f506679f44243b2efd608ef62ca0e941ee5991295f580dff55f5",
+        "signature": "d4d651a845ddf68fd87bf80cce88643220de6c55d42477525522b8348ca2db8e",
         "affectsGlobalScope": false
       },
       "../src/auth/get-user.decorator.ts": {

@@ -24,6 +24,7 @@ export class UsersRepository extends Repository<User> {
       aadhar,
       pan,
       userStatus,
+      pincodeMapping,
     } = authCredentialsDto;
 
     const salt = await bcrypt.genSalt();
@@ -42,6 +43,7 @@ export class UsersRepository extends Repository<User> {
       aadhar,
       pan,
       userStatus,
+      pincodeMapping,
     });
 
     try {

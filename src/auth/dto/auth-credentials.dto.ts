@@ -1,4 +1,5 @@
 import {
+  IsArray,
   IsEmail,
   IsEnum,
   IsNumber,
@@ -64,6 +65,9 @@ export class AuthCredentialsDto {
 
   @IsEnum(AuthUserStatus)
   userStatus: AuthUserStatus;
+
+  @IsArray()
+  pincodeMapping: string[];
 }
 
 export class AuthCredentialsDto2 {

@@ -81,6 +81,10 @@ __decorate([
     class_validator_1.IsEnum(auth_user_status_enum_1.AuthUserStatus),
     __metadata("design:type", String)
 ], AuthCredentialsDto.prototype, "userStatus", void 0);
+__decorate([
+    class_validator_1.IsArray(),
+    __metadata("design:type", Array)
+], AuthCredentialsDto.prototype, "pincodeMapping", void 0);
 exports.AuthCredentialsDto = AuthCredentialsDto;
 class AuthCredentialsDto2 {
 }

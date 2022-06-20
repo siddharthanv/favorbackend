@@ -15,6 +15,7 @@ export declare class AuthCredentialsDto {
     aadhar: string;
     pan: string;
     userStatus: AuthUserStatus;
+    pincodeMapping: string[];
 }
 export declare class AuthCredentialsDto2 {
     mobileNumber: string;
